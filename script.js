@@ -46,10 +46,10 @@ footer.innerHTML = `
 <br>
 <div class="container">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-6">
       <h4 style="color:whitesmoke;text-align: center;">Web creada por Nicolás Carmona, Vicente Solorza y Sebastián Benavente</h4>
     </div>
-    <div class="col-md-6">
+    <div class="col-6">
       <h4 style="color:whitesmoke;text-align: center;">Esta es la idea de un footer, información cómo whatsapp de contacto, o correo electrónico, serían ideales</h4>
     </div>
   </div>

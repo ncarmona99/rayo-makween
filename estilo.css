@@ -20,11 +20,8 @@ body {
     font-family:Arial
 }
 
-.container-fluid{
-    padding-left: 0%;
-    padding-right: 0%;
-    margin-left: auto;
-    margin-right: auto;
+.ultimas-reparaciones{
+  max-width: 100%;
 }
 
 .carousel-item{
@@ -113,3 +110,8 @@ body {
   border-top: none;
 }
 
+footer{
+  position: absolute;
+  background-color: #5a0e0e;
+  width:100%;
+}
