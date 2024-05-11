@@ -115,3 +115,23 @@ footer{
   background-color: #5a0e0e;
   width:100%;
 }
+
+.titulo-form{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+    
+}
+.navbar-toggler{
+  border-color:#ffffff00;
+}
+.fondo-form{
+  text-align: center;
+}
+.texto-form{
+  text-align: left;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
