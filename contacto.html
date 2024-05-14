@@ -38,7 +38,7 @@
             </div><br>
             <div>
                 <select class="form-select" id="genero" aria-label="Default select example">
-                    <option selected disabled>Seleccione su género</option>
+                    <option value="0" selected disabled>Seleccione su género</option>
                     <option value="1">Masculino</option>
                     <option value="2">Femenino</option>
                     <option value="3">Otro</option>
@@ -52,7 +52,6 @@
                 <textarea class="form-control" placeholder="Describa su problema" id='carta' style="height: 100px"></textarea><br>
                 <label for="carta">Describa el problema con su vehículo</label>
             </div>
-            <div class = "mensaje-error" id="error"></div><br>
             <input class="btn btn-secondary" type="submit" onclick = 'validar()' value="Validar nombre" style ="margin-bottom: 25px;">
         </form>
     </div>
