@@ -6,7 +6,7 @@ body {
 .carousel-caption{
     color:white;
     background-color:rgba(128, 128, 128, 0.774);
-    border-radius: 20px ;
+    border-radius: 10px ;
     width: 30vw;
     margin: auto;
 }
@@ -126,12 +126,8 @@ footer{
 .navbar-toggler{
   border-color:#ffffff00;
 }
-.fondo-form{
-  text-align: center;
-}
-.texto-form{
-  text-align: left;
-  font-family: "Play", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+
+.mensaje-error{
+  color:red;
+  font-size: 18px;
 }

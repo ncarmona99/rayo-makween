@@ -41,7 +41,7 @@ header.innerHTML = `
           </button>
         </div>
       </div>
-    </nav>`
+    </nav>`;
 footer.innerHTML = `
 <br>
 <div class="container">
@@ -54,4 +54,4 @@ footer.innerHTML = `
     </div>
   </div>
 </div>
-<br>`
+<br>`;
