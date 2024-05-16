@@ -4,7 +4,11 @@ const footer = document.querySelector('footer');
 header.innerHTML = `
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid" style="background-color: #C71E1E;">
-        <a class="navbar-brand" href="#" style="padding-left: 10px;">Rayo Makween</a>
+      <div id="autito" onmouseover="mover()" onmouseout="posIni()">
+      <img src="imagenes-autito/autito logo.png" alt="Autito">
+    </div>
+    <img src="imagenes-autito/logo.png">
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -55,3 +59,11 @@ footer.innerHTML = `
   </div>
 </div>
 <br>`
+
+function mover() {
+  document.getElementById('autito').classList.add('moving');
+}
+
+function posIni() {
+  document.getElementById('autito').classList.remove('moving');
+}

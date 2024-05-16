@@ -9,10 +9,6 @@
 <body>
   <header></header>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <div id="autito" onmouseover="mover()" onmouseout="posIni()">
-    <img src="imagenes-autito/autito logo.png" alt="Autito">
-  </div>
-  <img src="imagenes-autito/logo.png">
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -99,13 +95,6 @@
     var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
       return new bootstrap.Popover(popoverTriggerEl)
     })
-    function mover() {
-        document.getElementById('autito').classList.add('moving');
-    }
-    
-    function posIni() {
-        document.getElementById('autito').classList.remove('moving');
-    }
   </script>
 </body>
 </html>
