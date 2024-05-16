@@ -1,3 +1,28 @@
+/* Map container styles */
+.map-container {
+  position: relative;
+  margin-top: 100px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #e73d3d;
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 1; 
+  width: 450px;
+  height: 400px;
+}
+
+.map-container .map {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 300px;
+  margin-top: 15px;
+}
+
+
 body {
     background-image: url("https://media.istockphoto.com/id/1176654815/vector/car-service-seamless-pattern-with-thin-line-icons.jpg?s=612x612&w=0&k=20&c=UwuQ3KgfvIFnR6pcUZrDYWNPJPsF6bguULwOT0nKeYA=");
     
