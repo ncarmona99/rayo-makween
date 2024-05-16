@@ -6,7 +6,7 @@ body {
 .carousel-caption{
     color:white;
     background-color:rgba(128, 128, 128, 0.774);
-    border-radius: 20px ;
+    border-radius: 10px ;
     width: 30vw;
     margin: auto;
 }
@@ -138,4 +138,20 @@ footer{
   position: absolute;
   background-color: #5a0e0e;
   width:100%;
+}
+
+.titulo-form{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+    
+}
+.navbar-toggler{
+  border-color:#ffffff00;
+}
+
+.mensaje-error{
+  color:red;
+  font-size: 18px;
 }
