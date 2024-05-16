@@ -113,3 +113,26 @@ body {
   border-top: none;
 }
 
+.pista{
+  padding-top: 40px;
+  padding-left: 40px;
+
+}
+img#coche {
+  position: absolute;
+}
+#autito {
+  position: relative;
+  width: 100px;
+  height: auto;
+}
+
+#autito img {
+  width: 100%;
+  height: auto;
+  transition: transform 1s ease;
+}
+
+#autito.moving img {
+  transform: translateX(900px);
+}
