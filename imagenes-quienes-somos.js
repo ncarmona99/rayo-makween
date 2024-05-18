@@ -1,20 +1,29 @@
-/*const settings = {
-    async: true,
-    crossDomain: true,
-    url: 'https://f1-motorsport-data.p.rapidapi.com/photos?driverId=4665',
-    method: 'GET',
-    headers: {
-        'X-RapidAPI-Key': '42f4a3eb83msh581d80995676a59p1d6a7ajsndb2a90039252',
-        'X-RapidAPI-Host': 'f1-motorsport-data.p.rapidapi.com'
-    }
-};
+$(document).ready(function() {
+    const llave = 'BQbqkqbcCD1Or2vHhrMj49tEDrgCS24MBQ6h_Uv1WIM'; 
+    const fotos = [
+        { id: 'l6_FAGuqfSA', element: '#mecanico' },
+        { id: 'EJr3XkHdBm0', element: '#mecanico-2' },
+        { id: 'NLOmgkbouSk', element: '#mecanico-3' },
+        {id:'9fWL9CAluSA', element: '#mecanico-4'},
+        {id:'t59Y-XgI4oI', element: '#mecanico-5'},
+        {id: 'eC62S_EK5GM', element: '#mecanico-6'}
+    ];
 
-const driverPhoto = document.getElementById('driverPhoto');
-
-$.ajax(settings).done(function (response) {
-    if (response && response.length > 0) {
-        driverPhoto.src = response[1].imgSrc;
-    } else {
-        driverPhoto.src = 'placeholder.jpg'; 
-    }
-}); */
+    fotos.forEach(foto => {
+        $.ajax({
+            url: `https://api.unsplash.com/photos/${foto.id}`,
+            method: 'GET',
+            data: {
+                client_id: llave
+            },
+            success: function(data) {
+                const imageUrl = data.urls.regular;
+                $(foto.element).attr('src', imageUrl);
+                console.log('Photo ID:', data.id);
+            },
+            error: function(xhr, status, error) {
+                console.error('Error:', status, error);
+            }
+        });
+    });
+});
